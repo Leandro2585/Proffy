@@ -18,7 +18,7 @@
     font-weight: 400;
     font-size: 2rem;
     line-height: 4.6rem;
-    margin-top: 0.8rem; 
+    margin-top: 0.8rem;
 }
 .hero-image{
     width:95%;
@@ -73,7 +73,7 @@
         display: grid;
         grid-template-rows: 350px 1fr;
         grid-template-columns: 2fr 1fr 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "proffy hero hero"
             "buttons buttons total";
     }
@@ -85,7 +85,7 @@
 
     }
     .logo-container h2{
-        font-size: 3rem;
+        font-size: 5rem;
     }
     .logo-container img{
         height: 90%;

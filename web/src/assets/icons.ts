@@ -6,6 +6,7 @@ import giveClassesIcon from './icons/give-classes.svg';
 import purpleHearthIcon from './icons/purple-heart.svg';
 import backIcon from './icons/back.svg';
 import whatsappIcon from './icons/whatsapp.svg';
+import warningIcon from './icons/warning.svg';
 export default {
     logo,
     landingImg,
@@ -14,5 +15,6 @@ export default {
     giveClassesIcon,
     purpleHearthIcon,
     backIcon,
-    whatsappIcon
+    whatsappIcon,
+    warningIcon,
 }

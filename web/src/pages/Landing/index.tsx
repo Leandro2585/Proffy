@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './style.css';
 import svgs from '../../assets/icons';
+import api from '../../service/api';
 const Landing: React.FC = () => {
+    const [totalConn, setTotalConn] = useState(0);
+    useEffect(() => {
+        api.get('connections').then(response => {
+           const { total } = response.data;
+           setTotalConn(total);
+        })
+    },[totalConn])
     return (
         <div id="page-landing">
             <div id="page-landing-content" className="container">
@@ -11,9 +19,9 @@ const Landing: React.FC = () => {
                     <h2>Sua plataforma de estudos online.</h2>
                 </div>
 
-                <img 
-                    src={svgs.landingImg} 
-                    alt="Plataforma de estudos." 
+                <img
+                    src={svgs.landingImg}
+                    alt="Plataforma de estudos."
                     className="hero-image"/>
 
                 <div className="buttons-container">
@@ -25,15 +33,15 @@ const Landing: React.FC = () => {
                     <Link to="/give-classes" className="give-classes">
                         <img src={svgs.giveClassesIcon} alt="Ensinar"/>
                         Dar aulas
-                    </Link>                    
-                    
+                    </Link>
+
                 </div>
 
                 <span className="total-connections">
-                    Total de 239 conexões já realizadas <img src={svgs.purpleHearthIcon} alt="Health Purple"/>
+                    Total de {totalConn } conexões já realizadas <img src={svgs.purpleHearthIcon} alt="Health Purple"/>
                 </span>
             </div>
-        </div>    
+        </div>
     );
 }
 export default Landing;
