@@ -1,15 +1,13 @@
 <img alt="Proffy" title="Proffy" src="./assets/banner.svg"/>
-# Proffy
+<h1 align="center"> Proffy</h1>
 <p align="left">
-Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor
+Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor, uma alternativa ao modelo de estudo a distância que estamos enfrentando no momento.
 </p>
-Tabela de conteúdos
-===================
-<!--ts-->
-    * [Sobre](#Sobre)
-    * [Instalação](#instalacao)
-    * [Tecnologias](#tecnologias)
-<!--te-->
+<p align="center">
+      <a href="#Pré-requisitos">Instalação</a> • 
+      <a href="#Funcionalidades">Funcionalidades</a> • 
+      <a href="#Tecnologias">Tecnologias</a> • 
+</p>
 <h4 align="center">
 Em desenvolvimento
 </h4>
@@ -67,11 +65,11 @@ $ npm start
 
 ## Aulas
 - [x] Criar aula;
-- [] upload de video-aula
-- [x] listagem de aulas;
-    - Filtrar por matéria, dia da semana e horário;
-### :tools: Tecnologias
-As ferramentas utilizadas no desenvolvimento desse projeto foram
+- [ ] Upload de video-aula
+- [x] Listagem de aulas;
+    - [x] Filtrar por matéria, dia da semana e horário;
+### Tecnologias
+As ferramentas utilizadas no desenvolvimento desse projeto foram:
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
 - [Typescript](https://typescriptlang.org/)
