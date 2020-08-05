@@ -3,13 +3,11 @@
 <p align="left">
 Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor
 </p>
-Tabela de conteúdos
-===================
-<!--ts-->
-    * [Sobre](#Sobre)
-    * [Instalação](#instalacao)
-    * [Tecnologias](#tecnologias)
-<!--te-->
+<p align="center">
+      <a href="#sobre">Sobre</a> • 
+      <a href="#instalacao">Instalação</a> • 
+      <a href="#Tecnologias">Tecnologias</a> • 
+</p>
 <h4 align="center">
 Em desenvolvimento
 </h4>
@@ -67,10 +65,10 @@ $ npm start
 
 ## Aulas
 - [x] Criar aula;
-- [] upload de video-aula
-- [x] listagem de aulas;
-    - Filtrar por matéria, dia da semana e horário;
-### :tools: Tecnologias
+- [ ] Upload de video-aula
+- [x] Listagem de aulas;
+    - [x] Filtrar por matéria, dia da semana e horário;
+### Tecnologias
 As ferramentas utilizadas no desenvolvimento desse projeto foram
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
