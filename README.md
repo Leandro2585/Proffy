@@ -1,7 +1,7 @@
 <img alt="Proffy" title="Proffy" src="./assets/banner.svg"/>
-# Proffy
+<h1 align="center"> Proffy</h1>
 <p align="left">
-Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor
+Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor, uma alternativa ao modelo de estudo a distância que estamos enfrentando no momento.
 </p>
 <p align="center">
       <a href="#Pré-requisitos">Instalação</a> • 
