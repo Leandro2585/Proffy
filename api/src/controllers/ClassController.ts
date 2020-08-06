@@ -20,7 +20,7 @@ export default class ClassesController {
 
         const trx = await connection.transaction();
         try {
-            const insertedTeachersIds = await trx('teacher')
+            const insertedTeachersIds = await trx('teachers')
             .insert({
                 name,
                 avatar,
@@ -36,8 +36,7 @@ export default class ClassesController {
                 teacher_id
             });
             const class_id = insertedClassesId[0];
-            const classSchedule = schedule.map((item: ScheduleItem) => {
-                
+            const classSchedule = schedule.map((schedule: ScheduleItem) => {
                 return{
                     class_id,
                     week_day: schedule.week_day,
@@ -56,7 +55,7 @@ export default class ClassesController {
             return res.status(400).json({
                 error: 'Unexpected error while creating new class'
             });
-            
+
         }
     }
     async index(req: Request, res: Response){

@@ -1,6 +1,5 @@
 .select-block{
     position: relative;
-
 }
 .select-block + .select-block{
     margin-top: 1.4rem;

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, FormEvent } from 'react';
+import React, { useState, FormEvent } from 'react';
 import Header from '../../components/Header';
 import TeacherItem from '../../components/TeacherItem';
 import Input from '../../components/Input';
@@ -23,7 +23,7 @@ const TeacherList: React.FC = () => {
           time,
         }
       });
-      setTeachers(reponse.data);
+      setTeachers(response.data);
 
     }
     return(
@@ -78,7 +78,7 @@ const TeacherList: React.FC = () => {
             <main>
                 {teachers.map(teacher => (
                     <TeacherItem
-                      key={teacher.id}
+                      key={teacher}
                       teacher={teacher}
                     />
                 ))}

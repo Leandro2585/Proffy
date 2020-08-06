@@ -1,11 +1,12 @@
 import React from 'react';
 import svgs from '../../assets/icons';
 import './style.css';
+import api from '../../service/api';
+
 interface Props {
   teacher:{
-    profile_url: string;
-    name: string;
-    bio?: string;
+    avatar: string;
+    bio: string;
     cost: number;
     id: number;
     name: string;
@@ -13,9 +14,9 @@ interface Props {
     whatsapp: string;
   }
 }
-import api from '../../service/api';
 const TeacherItem: React.FC<Props> = ({ teacher }) => {
   function createConnection(){
+
     api.post('connections', {
       user_id: teacher.id
     })
@@ -23,7 +24,7 @@ const TeacherItem: React.FC<Props> = ({ teacher }) => {
     return (
         <article className="teacher-item">
                     <header>
-                        <img src={teacher.profile_url} alt={teacher.name}/>
+                        <img src={teacher.avatar} alt={teacher.name}/>
                         <div>
                             <strong>{teacher.name}</strong>
                             <span>{teacher.subject}</span>

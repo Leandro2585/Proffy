@@ -4,6 +4,7 @@ import Header from '../../components/Header';
 import Input from '../../components/Input';
 import Textarea from '../../components/Textarea';
 import Select from '../../components/Select';
+import api from '../../service/api';
 import svgs from '../../assets/icons';
 import './style.css';
 const TeacherForm: React.FC = () => {
@@ -24,19 +25,18 @@ const TeacherForm: React.FC = () => {
     setScheduleItems([
       ...scheduleItems,
       { week_day: 1, from: '10:00 AM', to: '6:00 PM'},
-
     ]);
   }
   function handleCreateClass(e: FormEvent){
     e.preventDefault();
-    api.post('classes', {
+    api.post('/classes', {
       name,
       avatar,
       whatsapp,
       bio,
       subject,
       cost: Number(cost),
-      schedule: scheduleItems
+      schedule: scheduleItems,
     }).then(() => {
       alert('Cadastro realizado com sucesso!');
       history.push('/');
@@ -112,14 +112,17 @@ const TeacherForm: React.FC = () => {
                     name="cost"
                     label="Custo da sua hora por aula"
                     value={cost}
-                    onChange={e => e.target.value}
+                    onChange={e =>  setCost(e.target.value)}
                     />
                 </fieldset>
 
                 <fieldset>
                   <legend>
                     Horários Disponíveis
-                    <button type="button" onCLick={addNewScheduleItem}>
+                    <button
+                      type="button"
+                      onClick={addNewScheduleItem}
+                    >
                       + Novo horário
                     </button>
                   </legend>
@@ -129,7 +132,7 @@ const TeacherForm: React.FC = () => {
                         <Select
                           name="week_day"
                           label="Dia da semana"
-                          value={setScheduleItems.week_day}
+                          value={scheduleItem.week_day}
                           onChange={e => setScheduleItemValue(index, 'week_day', e.target.value)}
                           options={[
                             { value: '0', label: 'Domingo'},
@@ -145,15 +148,15 @@ const TeacherForm: React.FC = () => {
                             name="from"
                             label="Das"
                             type="time"
-                            value={setScheduleItems.from}
-                            onChange={e => setScheduleItemValue(index, 'from', e.target.value)}
+                            value={scheduleItem.from}
+                            onChange={e => (setScheduleItemValue(index, 'from', e.target.value))}
                           />
                           <Input
                             name="to"
                             label="Até"
                             type="time"
-                            value={setScheduleItems.to}
-                            onChange={e => setScheduleItemValue(index, 'to', e.target.value)}
+                            value={scheduleItem.to}
+                            onChange={e => (setScheduleItemValue(index, 'to', e.target.value))}
                           />
                       </div>
                     );
