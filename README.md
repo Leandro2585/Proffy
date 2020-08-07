@@ -1,5 +1,4 @@
 <img alt="Proffy" title="Proffy" src="./assets/banner.svg"/>
-<h1 align="center"> Proffy</h1>
 <h2>📌 Sobre</h2>
 <p align="left">
 Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor, uma alternativa ao modelo de estudo a distância que estamos enfrentando no momento, de uma maneira dinâmica o usuário/aluno pode procurar por profissionais qualificados na área em que deseja estudar, já os professores podem se cadastrar informando seus dados pessoais, seus horários para dar aulas e o preço/hora que almeja.
@@ -40,22 +39,22 @@ $ npm run dev
 ```
 <h2>▶️ Rodando a aplicação web</h2>
 ``` bash
-# Clone o repositório
+<p>Clone o repositório</p>
 $ git clone <https://github.com/Leandro2585/proffy>
 
-# Acesse o diretório do projeto via terminal
+<p>Acesse o diretório do projeto via terminal</p>
 $ cd proffy
 
-# Vá até o diretório api
+<p>Vá até o diretório api</p>
 $ cd web
 
-# Instale as dependências do projeto
+<p> Instale as dependências do projeto</p>
 $ npm install
 
-# Execute a aplicação em modo de desenvolvimento
+<p> Execute a aplicação em modo de desenvolvimento</p>
 $ npm start
 
-# O serviço ficará disponível na porta: 3333 - para acessá-la use: <localhost:3000>
+<p> O serviço ficará disponível na porta: 3333 - para acessá-la use: <localhost:3000>
 ```
 <h2>⚙️ Funcionalidades</h2>
 
