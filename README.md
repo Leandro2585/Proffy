@@ -17,7 +17,7 @@ Para começar você vai precisar ter as seguintes ferramentas em sua máquina:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
 Também precisará de um editor para trabalhar com o código.
 
-<h2>▶️ Rodando a API</h2>
+<h2>▶️ Rodando o projeto</h2>
 
 ``` bash
 # Clone o repositório
@@ -36,38 +36,33 @@ $ npm install
 $ npm run dev
 
 # O serviço ficará disponível na porta: 3333 - para acessá-la use: <localhost:3333>
-```
-<h2>▶️ Rodando a aplicação web</h2>
-``` bash
-<p>Clone o repositório</p>
-$ git clone <https://github.com/Leandro2585/proffy>
 
-<p>Acesse o diretório do projeto via terminal</p>
-$ cd proffy
+# Agora abra outro terminal e acesse o diretório web
+$ cd proffy/web
 
-<p>Vá até o diretório api</p>
-$ cd web
-
-<p> Instale as dependências do projeto</p>
+# Instale as dependências
 $ npm install
 
-<p> Execute a aplicação em modo de desenvolvimento</p>
-$ npm start
+# Execute a aplicação web
+$ npm run start
 
-<p> O serviço ficará disponível na porta: 3333 - para acessá-la use: <localhost:3000>
+# O serviço ficará disponível na porta: 3000 - para acessá-la use: <localhost:3000>
+
 ```
+<br/>
+
 <h2>⚙️ Funcionalidades</h2>
 
-<h3> Conexões</h3>
+<h3> Conexões</h3><br>
 
-- [x] Listagem do total de conexões realizadas;
-- [x] Cadastro de uma nova conexão;
+- [x] Listagem do total de conexões realizadas;<br>
+- [x] Cadastro de uma nova conexão;<br>
 
-</h3> Aulas</h3>
-- [x] Criar aula;
-- [ ] Upload de video-aula
-- [x] Listagem de aulas;
-    - [x] Filtrar por matéria, dia da semana e horário;
+<h3> Aulas</h3><br>
+
+- [x] Criar aula;<br>
+- [x] Listagem de aulas;<br>
+- [x] Filtrar por matéria, dia da semana e horário;<br>
 <h2>💡 Tecnologias</h2>
 As ferramentas utilizadas no desenvolvimento desse projeto foram:
 - [Node.js](https://nodejs.org/en/)
