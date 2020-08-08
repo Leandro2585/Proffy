@@ -1,12 +1,5 @@
 <p align="center"><img align="center" alt="Proffy" title="Proffy" src="./assets/Logo.png"/></p>
-<p align="center">
-      <a href="#Sobre">Sobre</a> • 
-      <a href="#Páginas">Sobre</a> • 
-      <a href="#Pré-requisitos">Instalação</a> • 
-      <a href="#Rodandooprojeto">Rodando o projeto</a> • 
-      <a href="#Funcionalidades">Funcionalidades</a> • 
-      <a href="#Tecnologias">Tecnologias</a> • 
-</p>
+
 <h2 title="Páginas">📌 Sobre</h2>
 <p align="left">
 Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor, uma alternativa ao modelo de estudo a distância que estamos enfrentando no momento, de uma maneira dinâmica o usuário/aluno pode procurar por profissionais qualificados na área em que deseja estudar, já os professores podem se cadastrar informando seus dados pessoais, seus horários para dar aulas e o preço/hora que almeja.
