@@ -34,39 +34,39 @@ const StudyTabs = () => {
                 activeTintColor: '#32264d'
             }}
         >
-            <Screen 
-                name="TeacherList" 
+            <Screen
+                name="TeacherList"
                 component={TeacherList}
                 options={{
                     tabBarLabel: 'Proffys',
                     tabBarIcon: ({ color, size, focused }) => {
                         return(
-                            <Ionicons 
-                                name="ios-easel" 
-                                size={size} 
+                            <Ionicons
+                                name="ios-easel"
+                                size={size}
                                 color={focused? '#0FA3B1':color}/>
-                        );
+                        )
                     }
                 }}
             />
-            <Screen 
-                name="Favorites" 
+            <Screen
+                name="Favorites"
                 component={Favorites}
                 options={{
                     tabBarLabel: 'Favoritos',
                     tabBarIcon: ({ color, size, focused }) => {
                         return(
-                            <Ionicons 
-                                name="ios-heart" 
-                                size={size} 
+                            <Ionicons
+                                name="ios-heart"
+                                size={size}
                                 color={focused? '#0FA3B1':color}/>
-                        );
+                        )
                     }
                 }}
             />
 
 
-            
+
         </Navigator>
     );
 }

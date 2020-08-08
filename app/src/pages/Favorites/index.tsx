@@ -6,9 +6,9 @@ import PageHeader from '../../components/PageHeader';
 import TeacherItem, { Teacher } from '../../components/TeacherItem';
 import style from './style';
 const Favorites = () => {
-  const [favotites, setFavorites] = useState([]);
+  const [favorites, setFavorites] = useState([]);
 
-  function loadFavorites {
+  function loadFavorites(){
     AsyncStorage.getItem('favorites').then(response => {
       if(response){
         const favoritedTeachers = JSON.parse(response);
@@ -19,7 +19,7 @@ const Favorites = () => {
   useFocusEffect(
     React.useCallback(() => {
       loadFavorites();
-    }, []);
+    }, [])
   );
     return (
         <View style={style.container}>

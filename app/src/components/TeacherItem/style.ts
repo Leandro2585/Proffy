@@ -42,9 +42,9 @@ const style = StyleSheet.create({
     },
     footer: {
       backgroundColor: '#fafafc',
-      padding: 24,
+      padding: 16,
       alignItems: 'center',
-      marginTop: 24
+      marginTop: 16
     },
     price: {
       fontFamily: 'Poppins_400Regular',

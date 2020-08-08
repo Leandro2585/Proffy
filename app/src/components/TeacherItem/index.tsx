@@ -24,7 +24,7 @@ interface TeacherItemProps {
 const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
     const [isFavorited, setIsFavorited] = useState(favorited);
     function handleLinkToWhatsapp(){
-      api.post('connections'. {
+      api.post('connections', {
         teacher_id: teacher.id
       })
       Linking.openURL(`whatsapp://send?phone=${teacher.whatsapp}`);
@@ -94,3 +94,4 @@ const TeacherItem: React.FC<TeacherItemProps> = ({ teacher, favorited }) => {
         </View>
     );
 }
+export default TeacherItem;

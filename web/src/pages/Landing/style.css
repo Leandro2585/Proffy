@@ -16,7 +16,7 @@
 }
 .logo-container h2{
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 1rem;
     line-height: 4.6rem;
     margin-top: 0.8rem;
 }
@@ -85,7 +85,7 @@
 
     }
     .logo-container h2{
-        font-size: 5rem;
+        font-size: 3.5rem;
     }
     .logo-container img{
         height: 90%;

@@ -12,17 +12,13 @@ import style from './style';
 const TeacherList = () => {
     const [isFilterVisible, setIsFilterVisible] = useState(false);
     const [teachers, setTeachers] = useState([]);
-    const [favotites, setFavorites] = useState<number[]>([]);
+    const [favorites, setFavorites] = useState<number[]>([]);
     const [subject, setSubject] = useState('');
     const [week_day, setWeekDay] = useState('');
     const [time, setTime] = useState('');
 
-    useFocusEffect(
-      React.useCallback(() => {
-        loadFavorites();
-      }, []);
-    );
-    function loadFavorites {
+
+    function loadFavorites() {
       AsyncStorage.getItem('favorites').then(response => {
         if(response){
           const favoritedTeachers = JSON.parse(response);
@@ -31,6 +27,11 @@ const TeacherList = () => {
         }
       });
     }
+    useFocusEffect(
+      React.useCallback(() => {
+        loadFavorites();
+      }, [])
+    );
     function handleToggleFilterVisible(){
       setIsFilterVisible(!isFilterVisible);
     }
@@ -98,7 +99,7 @@ const TeacherList = () => {
             </PageHeader>
 
             <ScrollView
-              style={style.TeacherList}
+              style={style.teacherList}
               contentContainerStyle={{
                 paddingHorizontal: 16,
                 paddingBottom: 16,
