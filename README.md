@@ -1,17 +1,37 @@
-<img alt="Proffy" title="Proffy" src="./assets/banner.svg"/>
+<img align="center" alt="Proffy" title="Proffy" src="./assets/Logo.png"/>
+<p align="center">
+      <a href="#Sobre">Sobre</a> • 
+      <a href="#Pré-requisitos">Instalação</a> • 
+      <a href="#Rodandooprojeto">Rodando o projeto</a> • 
+      <a href="#Funcionalidades">Funcionalidades</a> • 
+      <a href="#Tecnologias">Tecnologias</a> • 
+</p>
 <h2>📌 Sobre</h2>
 <p align="left">
 Aplicação desenvolvida durante a NextLevelWeek#2, trata-se de uma plataforma que facilite a comunicação entre aluno e professor, uma alternativa ao modelo de estudo a distância que estamos enfrentando no momento, de uma maneira dinâmica o usuário/aluno pode procurar por profissionais qualificados na área em que deseja estudar, já os professores podem se cadastrar informando seus dados pessoais, seus horários para dar aulas e o preço/hora que almeja.
 </p>
-<p align="center">
-      <a href="#Pré-requisitos">Instalação</a> • 
-      <a href="#Funcionalidades">Funcionalidades</a> • 
-      <a href="#Tecnologias">Tecnologias</a> • 
-</p>
+
 <h4 align="center">
-Em desenvolvimento
+🚧 Em desenvolvimento 🚧
 </h4>
 
+<h2>Páginas Web</h2>
+<h3>Landing</h3>
+<p align="center">
+      <img src="./assets/Landing_Web.png" alt="LandingPage"/>
+</p>
+<h3>Give Classes</h3>
+<p align="center">
+      <img src="./assets/GiveClasses_Web.png" alt="GiveClasses"/>
+</p>
+<h3>Teacher List</h3>
+<p align="center">
+      <img src="./assets/Study_Web.png" alt="Study"/>
+</p>
+
+
+<h2>Páginas Mobile</h2>
+<img src="./assets/AppPages.png" alt="AppPages"/>
 <h2>📋 Pré-requisitos</h2>
 Para começar você vai precisar ter as seguintes ferramentas em sua máquina:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/).
@@ -48,6 +68,17 @@ $ npm run start
 
 # O serviço ficará disponível na porta: 3000 - para acessá-la use: <localhost:3000>
 
+# Agora para o mobile é necessário ter instalado em seu device o App Expo
+# Navegue até o diretório app com o seguinte comando
+$ cd proffy/app
+
+# Instale as dependências
+$ npm install
+
+# Execute o app
+$ npm run start
+
+# Será exibido um QR Code, através de seu device abra o aplicativo expo e escaneie esse QR Code
 ```
 <br/>
 
