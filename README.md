@@ -1,4 +1,4 @@
-<img align="center" alt="Proffy" title="Proffy" src="./assets/Logo.png"/>
+<p align="center"><img align="center" alt="Proffy" title="Proffy" src="./assets/Logo.png"/></p>
 <p align="center">
       <a href="#Sobre">Sobre</a> • 
       <a href="#Pré-requisitos">Instalação</a> • 
