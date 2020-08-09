@@ -10,11 +10,13 @@ import './style.css';
 const TeacherForm: React.FC = () => {
   const history = useHistory();
 
+  // Teacher
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [whatsapp, setWhatsapp] = useState('');
   const [bio, setBio] = useState('');
 
+  // Class
   const [subject, setSubject] = useState('');
   const [cost, setCost] = useState('');
   const [scheduleItems, setScheduleItems] = useState([
@@ -36,12 +38,14 @@ const TeacherForm: React.FC = () => {
       bio,
       subject,
       cost: Number(cost),
-      schedule: scheduleItems,
-    }).then(() => {
-      alert('Cadastro realizado com sucesso!');
-      history.push('/');
-    }).catch(() => {
-      alert('Erro ao cadastrar!');
+      schedule: scheduleItems
+    }).then((response) => {
+        alert('Cadastro realizado com sucesso!');
+        localStorage.setItem('class_id', response.data.class_id);
+        history.push('/');
+
+    }).catch((err) => {
+      alert('Erro ao cadastrar!'+err);
     })
   }
   function setScheduleItemValue(position: number, field: string, value: string){
@@ -163,6 +167,7 @@ const TeacherForm: React.FC = () => {
                   })}
 
                 </fieldset>
+                
 
                 <footer>
                   <p>

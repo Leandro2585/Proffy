@@ -1,0 +1,50 @@
+
+.todo-item{
+    background-color: var(--color-box-base);
+    border: 1px solid var(--color-line-in-white);
+    border-radius: 0.8rem;
+    margin-top: 2.4rem;
+    overflow: hidden;
+    box-shadow: 1px 15px 15px rgba(255,255,255,0.08),
+                inset 1px 15px 15px rgba(255,255,255,0.08),
+                1px -15px 15px rgba(0,0,0,0.08),
+                inset 1px -15px 15px rgba(0,0,0,0.08);
+}
+.todo-item header{
+    padding: 3.2rem 2rem;
+    display: flex;
+    align-items: center;
+}
+.todo-item header img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.todo-item header div{
+    margin-left: 2.4rem;
+}
+.todo-item header div strong{
+    font: 700 2.4rem Archivo;
+    display: block;
+    color: var(--color-text-title);
+}
+.todo-item header div span{
+    font-size:1.6rem;
+    display: block;
+    margin-top: 0.4rem;
+}
+.todo-item > p{
+    padding: 0 2rem;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+}
+
+@media (min-width: 700px){
+    .todo-item header,
+    .todo-item footer{
+        padding: 3.2rem;
+    }
+    .todo-item > p {
+        padding: 0 3.2rem;
+    }
+}

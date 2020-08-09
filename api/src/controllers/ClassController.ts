@@ -15,9 +15,8 @@ export default class ClassesController {
             bio,
             subject,
             cost,
-            schedule
+            schedule,
         } = req.body;
-
         const trx = await connection.transaction();
         try {
             const insertedTeachersIds = await trx('teachers')
@@ -27,33 +26,39 @@ export default class ClassesController {
                 whatsapp,
                 bio
             });
-
             const teacher_id = insertedTeachersIds[0];
+
             const insertedClassesId = await trx('classes')
             .insert({
                 subject,
                 cost,
                 teacher_id
             });
+
             const class_id = insertedClassesId[0];
-            const classSchedule = schedule.map((schedule: ScheduleItem) => {
-                return{
+              const classSchedule = schedule.map((scheduleItem: ScheduleItem) => {
+                return {
                     class_id,
-                    week_day: schedule.week_day,
-                    from: convertHourToMinutes(schedule.from),
-                    to: convertHourToMinutes(schedule.to),
+                    week_day: scheduleItem.week_day,
+                    from: convertHourToMinutes(scheduleItem.from),
+                    to: convertHourToMinutes(scheduleItem.to),
                 };
-            });
-            await trx('class_schedule')
-            .insert(classSchedule);
+              });
+              await trx('class_schedule')
+              .insert(classSchedule);
 
             await trx.commit();
-            return res.status(201).send();
+            return res.status(201).json({
+                  subject,
+                  cost,
+                  teacher_id,
+                  class_id
+            });
 
         } catch (err) {
             await trx.rollback();
             return res.status(400).json({
-                error: 'Unexpected error while creating new class'
+                error: 'Unexpected error while creating new class : '+err
             });
 
         }

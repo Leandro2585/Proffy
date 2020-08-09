@@ -7,6 +7,7 @@ import purpleHearthIcon from './icons/purple-heart.svg';
 import backIcon from './icons/back.svg';
 import whatsappIcon from './icons/whatsapp.svg';
 import warningIcon from './icons/warning.svg';
+import rocket from './icons/rocket.svg';
 export default {
     logo,
     landingImg,
@@ -17,4 +18,5 @@ export default {
     backIcon,
     whatsappIcon,
     warningIcon,
+    rocket
 }

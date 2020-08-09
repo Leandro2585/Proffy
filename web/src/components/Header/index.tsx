@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import svgs from '../../assets/icons';
 import './style.css';
 interface Props {
-    title: string;
+    title?: string;
     description?: string;
+    dropzone?: boolean;
 }
 const Header: React.FC<Props> = (props) => {
     return (
@@ -16,9 +17,10 @@ const Header: React.FC<Props> = (props) => {
                 <img src={svgs.logo} alt="Proffy"/>
             </div>
             <div className="header-content">
-                <strong>{props.title}</strong>
-                { props.description ? <p>{props.description}</p> : null}
-                {props.children}
+             <strong>{props.title}</strong>
+             { props.description ? <p>{props.description}</p> : null }
+             {props.children}
+
             </div>
         </header>
     );
